@@ -1,8 +1,6 @@
-const express = require("express");
-const app = express();
-const port: number = 3000;
+import { app, port } from "./config";
 
-app.get("/", (req:any, res: any) => {
+app.get("/", (req: any, res: any) => {
   res.send("Hello world");
 });
 
